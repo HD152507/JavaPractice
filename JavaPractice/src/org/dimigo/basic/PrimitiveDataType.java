@@ -35,15 +35,15 @@ public class PrimitiveDataType
 		System.out.println(age + "세");
 
 		double height = 161.8;
-		System.out.println("키 : ");
+		System.out.print("키 : ");
 		System.out.println(height + "cm");
 
 		float weight = 44.3F;
-		System.out.println("몸무게 : ");
+		System.out.print("몸무게 : ");
 		System.out.println(weight + "kg");
 
 		char bloodType = 'A';
-		System.out.println("혈액형 : ");
+		System.out.print("혈액형 : ");
 		System.out.println(bloodType + "형");
 
 	}
