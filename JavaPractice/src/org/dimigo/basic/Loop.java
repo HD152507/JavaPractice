@@ -24,48 +24,47 @@ public class Loop
 	 */
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
-		
-		int i,j;
-		for(i=2;i<=9;i++)
-		{
-			for(j=1;j<=9;j++)
-				System.out.print(i*j+" ");
-			System.out.println("");
-		}
-		
-		String[] twice = {"foo","bar","baz","qux","quux"};
-		for (String m : twice)
-		{
-			System.out.println(m);
-		}
+		int num;
+		int damage = 100;
+		String[] career= {"마법사","영주","기사","농민"};
 		Scanner scanner = new Scanner(System.in);
 		int choice;
-		
-
+		do
 		{
-			System.out.println("menu");
-			System.out.println("1. foo");
-			System.out.println("2. bar");
-			System.out.println("9. exit");
-			System.out.println("select");
-			
+			num =  new Random().nextInt(4);
+			System.out.println("-------------");
+			System.out.println("<< 게임 메뉴 >>");
+			System.out.println(" 1. 공격력 증가");
+			System.out.println(" 2. 공격력 감소");
+			System.out.println(" 3. 캐릭터 설정");
+			System.out.println(" 9. 종료");
+			System.out.println("-------------");
+			System.out.println("메뉴 입력 =>");
+//			입력
 			choice = scanner.nextInt();
-		}
-		switch(choice) 
-		{
-			case 1:
-				System.out.println("foo");
+			switch (choice)
+			{
+			case 1 : 
+				damage+=10;
+				System.out.printf("공격력이 증가되었습니다. 현재 공격력 : %d\n",damage);
 				break;
-			case 2:
-				System.out.println("bar");
+			case 2 :
+				damage-=10;
+				System.out.printf("공격력이 감소되었습니다. 현재 공격력 : %d\n",damage);
 				break;
-			case 3:
-				System.out.println("baz");
+			case 3 :
+				System.out.printf("%s(으)로 설정되었습니다.\n",career[num]);
+				break;
+			case 9 :
+				System.out.println("이제 공부하세요!\n");
 				break;
 			default:
-				System.out.println("no neim");
+				System.out.println("없는 메뉴입니다!");
+				break;
+			}	
 		}
+		while(choice!=9);
+		scanner.close();
 	}
 	
 }
