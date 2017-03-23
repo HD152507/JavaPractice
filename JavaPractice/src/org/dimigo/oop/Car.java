@@ -1,7 +1,7 @@
 /**
  * 
  */
-package oop;
+package org.dimigo.oop;
 
 /**
  * <pre>
