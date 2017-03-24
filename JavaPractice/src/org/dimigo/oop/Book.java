@@ -14,7 +14,8 @@ package org.dimigo.oop;
  * @author JunhaKim
  * @version : 1.0
  */
-public class Book {
+public class Book 
+{
 
 	public String title;
 	public String author;
