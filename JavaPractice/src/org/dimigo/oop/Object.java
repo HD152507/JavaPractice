@@ -5,16 +5,16 @@ package org.dimigo.oop;
 
 /**
  * <pre>
- *  org.dimigo.basic
- *  |_CarTest
+ *  org.dimigo.oop
+ *  |_Object
  * 1. 개요 :
- * 2. 작성일 : 2017. 3. 23.
+ * 2. 작성일 : 2017. 3. 28.
  * </pre>
  *
  * @author JunhaKim
  * @version : 1.0
  */
-public class CarTest2 {
+public class Object {
 
 	/**
 	 * @param args
@@ -23,12 +23,6 @@ public class CarTest2 {
 	{
 		// TODO Auto-generated method stub
 
-		
-	}
-	
-	private void compare()
-	{
-		
 	}
 
 }
