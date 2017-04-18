@@ -19,7 +19,7 @@ import java.lang.reflect.Member;
 public class PiggyBank {
 	private static int balance;
 
-	public static void pubMoney(FamilyMember member, int amount) {
+	public static void putMoney(FamilyMember member, int amount) {
 		System.out.println(member.getMemberName() + " : " + amount + "원 넣음");
 		balance += amount;
 	}

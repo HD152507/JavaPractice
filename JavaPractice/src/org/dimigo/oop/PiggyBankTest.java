@@ -16,19 +16,19 @@ package org.dimigo.oop;
  */
 public class PiggyBankTest {
 	public static void main(String[] args) {
-		FamilyMember[] asdf = { 
+		FamilyMember[] member = { 
 				new FamilyMember("아빠"), 
 				new FamilyMember("엄마"), 
 				new FamilyMember("나"),
 				new FamilyMember("남동생") 
 				};
-		int[] qwer = { 10000, 5000, 2000, 1000 };
+		int[] amount = { 10000, 5000, 2000, 1000 };
 		FamilyMember.printMemberCnt();
 		
-		for (int i = 0; i < asdf.length; i++)
-			PiggyBank.pubMoney(asdf[i], qwer[i]);
+		for (int i = 0; i < member.length; i++)
+			PiggyBank.putMoney(member[i], amount[i]);
 		PiggyBank.printBalance();
-		PiggyBank.pubMoney(asdf[2], 1000);
+		PiggyBank.putMoney(member[2], 1000);
 		PiggyBank.printBalance();
 
 	}
