@@ -17,7 +17,10 @@ package org.dimigo.oop;
 public class Calculator {
 	private int num1;
 	private int num2;
+	private boolean powerFlag;
 	
+	
+	public static double pi = 3.14;
 	public Calculator(){
 		
 	}
@@ -28,30 +31,37 @@ public class Calculator {
 	}
 	
 	public void powerOn() {
+		if(!this.powerFlag){
 		System.out.println("전원을 켭니다.");
+		this.powerFlag = true;
+		}
 	}
 	
 	public void powerOff() {
 		System.out.println("전원을 끕니다.");
 	}
 	
-	public int add()
+	public static int add(int a, int b, Calculator calc)
 	{
-		return num1 + num2;
+		calc.powerOn();
+		return a+b; 
 	}
 	
-	public int sub()
+	public static int sub(int a, int b, Calculator calc)
 	{
-		return num1 - num2;
+		calc.powerOn();
+		return a+b;
 	}
 	
-	public int mul()
+	public static int mul(int a, int b, Calculator calc)
 	{
-		return num1 * num2;
+		calc.powerOn();
+		return a*b;
 	}
 	
-	public double div()
+	public static double div(int a, int b, Calculator calc)
 	{
-		return (double)num1 / num2;
+		calc.powerOn();
+		return (double)a/b;
 	}
 }
