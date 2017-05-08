@@ -16,32 +16,33 @@ package org.dimigo.inheritance;
  */
 public class Person {
 
-	public String name;
-	public int age;
-	public int height;
-	public int weight;
-
-	public Person() {
-
-	}
-
-	public Person(String name, int age, int height, int weight) {
-		this.name = name;
-		this.age = age;
-		this.height = height;
-		this.weight = weight;
+	private String name;
+	Person(){
 		
 	}
-
-	public void eat() {
-		System.out.println(name + "가 먹는다.");
+	
+	Person(String name){
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void sayHello(){
+		System.out.println("Hello");
+	}
+	
+	public void sayBye(){
+		System.out.println("Bye");
+	}
+	
+	public String toString(){
+		return "저는 "+name+"입니다.";
 	}
 
-	public void sleep() {
-		System.out.println(name + "가 잔다.");
-	}
-
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", height=" + height + ", weight=" + weight + "]";
-	}
 }

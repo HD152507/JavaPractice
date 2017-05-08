@@ -19,24 +19,24 @@ public class Teacher extends Person {
 
 	public Teacher(String name, int age, int height, int weight, String subject) {
 	
-		this.name = name;
-		this.age = age;
-		this.height = height;
-		this.weight = weight;
+//		this.name = name;
+//		this.age = age;
+//		this.height = height;
+//		this.weight = weight;
+		super(name, age, height, weight);
 		this.subject = subject;
 	}
 	
 	public void teach() {
-		System.out.println(name + "가르친다.");
+		System.out.println(super.getname() + "가르친다.");
 	}
 
 	public void doTask() {
-		System.out.println(name + "일을 한다.");
+		System.out.println(super.getname() + "일을 한다.");
 	}
 
 	public String toString() {
-		return "Teacher [subject=" + subject + ", name=" + name + ", age=" + age + ", height=" + height + ", weight="
-				+ weight + "]";
+		return "Teacher [subject=" + subject + super.toString();
 	}
 	
 }
