@@ -14,23 +14,22 @@ package org.dimigo.inheritance;
  * @author JunhaKim
  * @version : 1.0
  */
-public class Korean extends Person{
+public class Korean extends Person {
 
-	Korean(String name){
+	Korean(String name) {
 		super(name);
 	}
-	
-	public void sayHello(){
+
+	public void sayHello() {
 		System.out.println("안녕하세요");
 	}
-	
-	public void sayBye(){
+
+	public void sayBye() {
 		System.out.println("안녕히계세요");
 	}
-	
-	public String toString(){
-		return "저는 한국사람 "+ getName() +"입니다";
+
+	public String toString() {
+		return "저는 한국사람 " + getName() + "입니다";
 	}
 
-	
 }

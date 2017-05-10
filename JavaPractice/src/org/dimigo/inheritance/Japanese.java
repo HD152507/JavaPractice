@@ -14,23 +14,22 @@ package org.dimigo.inheritance;
  * @author JunhaKim
  * @version : 1.0
  */
-public class Japanese extends Person{
-	
-	Japanese(String name){
+public class Japanese extends Person {
+
+	Japanese(String name) {
 		super(name);
 	}
-	
-	public void sayHello(){
+
+	public void sayHello() {
 		System.out.println("오하이오");
 	}
-	
-	public void sayBye(){
+
+	public void sayBye() {
 		System.out.println("사요나라");
 	}
-	
-	public String toString(){
-		return "저는 일본사람 "+ getName() +"입니다";
+
+	public String toString() {
+		return "저는 일본사람 " + getName() + "입니다";
 	}
 
-	
 }
