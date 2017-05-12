@@ -19,30 +19,24 @@ public class PersonTest2 {
 	/**
 	 * @param args
 	 */
-	
-	private static void greeting(Person p)
-	{
+
+	private static void greeting(Person p) {
 		System.out.println(p.toString());
 		p.sayHello();
 		p.sayBye();
 		System.out.println();
 	}
-	
+
 	public static void main(String[] args) {
-		
-		Person[] p = {
-				new Person("Tom"),
-				new Korean("홍길동"),
-				new Japanese("다나카"),
-				new Chinese("왕밍"),
-				
+
+		Person[] p = { new Person("Tom"), new Korean("홍길동"), new Japanese("다나카"), new Chinese("왕밍"),
+
 		};
-		
-		for(int i=0;i<4;i++)
-		{
+
+		for (int i = 0; i < 4; i++) {
 			greeting(p[i]);
 		}
-		
+
 	}
 
 }
