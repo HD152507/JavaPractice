@@ -14,18 +14,15 @@ package org.dimigo.inheritance;
  * @author JunhaKim
  * @version : 1.0
  */
-public class SmartPhoneTest{
-
-	/**
-	 * @param args
-	 */
+public class SmartPhoneTest {
 	public static void main(String[] args) {
-		
-		SmartPhone[] = {
-				new IPhone("iPhone 7", "애플", "900000"),
-				new Galaxy("갤럭시 S8", "삼성", "800000"),
-		};
-				
+		SmartPhone[] arrays = { new IPhone("iPhone 7", "애플", 900000), new Galaxy("갤럭시 S8", "삼성", 800000) };
+		for (SmartPhone sm : arrays) {
+			System.out.println(sm);
+			sm.turnOn();
+			sm.pay();
+			sm.useSpecialFunction(sm);
+			sm.turnOff();
+		}
 	}
-
 }

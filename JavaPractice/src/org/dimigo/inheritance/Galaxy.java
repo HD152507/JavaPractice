@@ -14,25 +14,19 @@ package org.dimigo.inheritance;
  * @author JunhaKim
  * @version : 1.0
  */
-public class Galaxy {
-	
+public class Galaxy extends SmartPhone {
 	public Galaxy() {
-
 	}
 
-	public Galaxy (String model, String company, int price) {
-
-	}
-
-	public void turnOn() {
-		System.out.println("갤럭시 S8의 전원을 켭니다.");
-	}
-
-	public void turnOff() {
-		System.out.println("갤럭시 S8의 전원을 끕니다.");
+	public Galaxy(String model, String company, int price) {
+		super(model, company, price);
 	}
 
 	public void pay() {
-		System.out.println("삼성 페이로 결재합니다.");
+		System.out.println("삼성 페이로 결제합니다.");
+	}
+
+	public void useWirelessCharging() {
+		System.out.println("무선 충전 기능을 이용합니다.");
 	}
 }
