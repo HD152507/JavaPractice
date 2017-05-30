@@ -17,26 +17,12 @@ package org.dimigo.exception;
 public class MovieTest {
 	public static void main(String[] args) {
 
-		Movie[] movies = {
-				new Movie("에이리언:커버넌트", 15),
-				new Movie("가디언즈 오브 갤럭시", 12)
-		};
-		
+		Movie[] movies = { new Movie("에이리언:커버넌트", 15), new Movie("가디언즈 오브 갤럭시", 12) };
+
 		int age = 13;
-		
-		for(Movie movie : movies) {
+
+		for (Movie movie : movies) {
 			movie.buyTicket(age);
-			
-			if(age > movie.getLimitAge()) {
-				try {
-					System.out.println("1");
-				}
-				catch (Exception e) {
-					System.out.println("2");
-					throw e;
-				}
-			}
-			
 		}
 	}
 }
