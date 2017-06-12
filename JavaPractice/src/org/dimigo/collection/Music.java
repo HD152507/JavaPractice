@@ -15,45 +15,40 @@ package org.dimigo.collection;
  * @version : 1.0
  */
 public class Music {
-
 	private String title;
 	private String singer;
 	
-	public Music(String title, String singer) {
-		
+	Music(String title, String singer){
 		this.title = title;
 		this.singer = singer;
 	}
 
-	/**
-	 * @return the title
-	 */
+
 	public String getTitle() {
 		return title;
 	}
 
-	/**
-	 * @param title the title to set
-	 */
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-	/**
-	 * @return the singer
-	 */
+
 	public String getSinger() {
 		return singer;
 	}
 
-	/**
-	 * @param singer the singer to set
-	 */
+
 	public void setSinger(String singer) {
 		this.singer = singer;
 	}
+
+
+
+	public String toString() {
+		return title + " ("+singer+")";
+	}
 	
-    public String toString() {
-        return title+" ("+singer+")";
-    }
+	
+	
 }
