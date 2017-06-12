@@ -1,7 +1,7 @@
 /**
  * 
  */
-package collection;
+package org.dimigo.collection;
 
 import java.util.ArrayList;
 import java.util.List;
